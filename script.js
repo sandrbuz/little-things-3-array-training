@@ -29,7 +29,7 @@
 
 array3 = [];
 for (i = 0; i < 50; i++) {
-    if (array3(i) = i * i) {
+    if (array3[i] = i * i) {
         array3.push(i)
     }
 }
