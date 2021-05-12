@@ -38,8 +38,31 @@
 
 // ряд чисел в диапазоне с шагом 5
 
-array4 = [];
-for (i = 20; i <= 50; i = i + 5) {
-    array4.push(i)
+// array4 = [];
+// for (i = 20; i <= 50; i = i + 5) {
+//     array4.push(i)
+// }
+// console.log(array4);
+
+// значения функции при разных значениях переменных
+
+var x;
+var y;
+
+var arr1 = [];
+var arr2 = [];
+
+function Val(max, min, step) {
+    for (var x = min; x <= max; x += step) {
+        y = -0.23 * Math.pow(x, 2) + x;
+        arr1.push(x);
+        arr2.push(y);
+    };
+    return arr1, arr2;
+
+
 }
-console.log(array4);
+
+var b = Val(3, 1, 0.5);
+console.log(arr1);
+console.log(arr2);
