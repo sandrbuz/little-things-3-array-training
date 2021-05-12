@@ -27,10 +27,19 @@
 // }
 //  массив каждый  элемент которого равен квадрату своего индекса
 
-array3 = [];
-for (i = 0; i < 50; i++) {
-    if (array3[i] = i * i) {
-        array3.push(i)
-    }
+// array3 = [];
+// for (i = 0; i < 50; i++) {
+//     if (array3[i] = i * i) {
+//         array3.push(i)
+//     }
+// }
+// console.log(array3);
+
+
+// ряд чисел в диапазоне с шагом 5
+
+array4 = [];
+for (i = 20; i <= 50; i = i + 5) {
+    array4.push(i)
 }
-console.log(array3);
+console.log(array4);
