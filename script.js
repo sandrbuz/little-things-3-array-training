@@ -46,23 +46,39 @@
 
 // значения функции при разных значениях переменных
 
-var x;
-var y;
+// var x;
+// var y;
 
-var arr1 = [];
-var arr2 = [];
+// var arr1 = [];
+// var arr2 = [];
 
-function Val(max, min, step) {
-    for (var x = min; x <= max; x += step) {
-        y = -0.23 * Math.pow(x, 2) + x;
-        arr1.push(x);
-        arr2.push(y);
-    };
-    return arr1, arr2;
+// function Val(max, min, step) {
+//     for (var x = min; x <= max; x += step) {
+//         y = -0.23 * Math.pow(x, 2) + x;
+//         arr1.push(x);
+//         arr2.push(y);
+//     };
+//     return arr1, arr2;
 
+
+// }
+
+// var b = Val(3, 1, 0.5);
+// console.log(arr1);
+// console.log(arr2);
+
+
+// assimilation 'return'------------------
+
+
+function ret(a) {
+    if (a == 0) return 'абвгд'
 
 }
 
-var b = Val(3, 1, 0.5);
-console.log(arr1);
-console.log(arr2);
+function ret2() {
+    return ret(0);
+}
+
+document.querySelector('.ret').textContent = ret2();
+
